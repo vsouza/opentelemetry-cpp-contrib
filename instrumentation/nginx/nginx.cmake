@@ -6,7 +6,7 @@ if (NOT NGINX_VERSION)
     ERROR_VARIABLE NGINX_VERSION_STRING
   )
 
-  set(NGINX_VER "1.19.3.1")
+  set(NGINX_VER "1.19.3")
 else()
   set(NGINX_VER "1.18.0")
 endif()
