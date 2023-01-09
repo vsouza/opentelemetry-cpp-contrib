@@ -5,8 +5,8 @@ if (NOT NGINX_VERSION)
   execute_process(COMMAND ${NGINX_BIN} -v
     ERROR_VARIABLE NGINX_VERSION_STRING
   )
- 
-  string(REGEX MATCH "[0-9]+\\.\[0-9]+\\.[0-9]+" NGINX_VER ${NGINX_VERSION_STRING})
+
+  string(REGEX MATCH "[0-9]+\\.\[0-9]+\\.[0-9]+\\.[0-9]+" NGINX_VER ${NGINX_VERSION_STRING})
 else()
   set(NGINX_VER "1.18.0")
 endif()
